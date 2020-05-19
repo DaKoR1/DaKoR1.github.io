@@ -1,0 +1,56 @@
+<html lang="en"><head>
+    <meta charset="UTF-8">
+    <title>Portfoli</title>
+    <link rel="icon" href="imatges/favicon.png" type="image/png" sizes="20x20">
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Slabo+27px&display=swap" rel="stylesheet">
+    <link href="../css/estil.css" rel="stylesheet">
+</head>
+<style>
+    .mySlides {
+        display: none;
+    }
+</style>
+
+<body>
+        
+       <div class="bloc">
+            <div>
+
+            <img class="mySlides" src="../imatges/imatgep1.jpeg" style="width:100%">
+            
+            <img class="mySlides" src="../imatges/imatgep2.jpeg" style="width:100%">
+            <img class="mySlides" src="../imatges/imatgep3.jpeg" style="width:100%">
+
+            <button class="boton-slider fletxaDreta-slider" onclick="plusDivs(-1)">&#10094;</button>
+            <button class="boton-slider fletxaEsquerra-slider" onclick="plusDivs(1)">&#10095;</button>
+</div>
+        </div>
+
+        <script>
+            var slideIndex = 1;
+            showDivs(slideIndex);
+
+            function plusDivs(n) {
+                showDivs(slideIndex += n);
+            }
+
+            function showDivs(n) {
+                var i;
+                var x = document.getElementsByClassName("mySlides");
+                if (n > x.length) {
+                    slideIndex = 1
+                }
+                if (n < 1) {
+                    slideIndex = x.length
+                }
+                for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";
+                }
+                x[slideIndex - 1].style.display = "block";
+            }
+        </script>
+         
+   
+    <p class="footer">DaKoR · Tlf:627739302 · daniguti777@gmail.com</p>
+    </body>
+    </html>
