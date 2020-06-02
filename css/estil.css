@@ -251,6 +251,7 @@ float: right;
         /*indicador*/
         margin: 5px;
         border: 1px dashed green;
+        margin-top: 10px;
 
     }
 
@@ -292,3 +293,6 @@ float: right;
     .mySlides {
         display: none;
     }
+    .vg{
+    margin-bottom: 50px;
+}
