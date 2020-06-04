@@ -264,13 +264,13 @@ float: right;
     .boton-slider {
         width: 50px;
         height: 30px;
-        background-color: #0080ff;
+        background-color: blue;
     }
 
     .boton-slider:hover {
         width: 50px;
         height: 30px;
-        background-color: skyblue;
+        background-color: cornflowerblue;
     }
 
     .fletxaDreta-slider {
@@ -278,6 +278,7 @@ float: right;
         top: 50%;
         left: 0%;
         transform: translate(0%, -50%);
+        color: white;
         */
     }
 
@@ -286,6 +287,7 @@ float: right;
         top: 50%;
         right: 0%;
         transform: translate(0%, -50%);
+        color: white;
     }
 
 
